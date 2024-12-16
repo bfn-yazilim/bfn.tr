@@ -86,6 +86,7 @@ main .links {
   gap: 10px;
   width: 100%;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 main .links .link {
