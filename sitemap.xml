@@ -25,4 +25,11 @@
         <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://weekly-calendar.bfn.tr/</loc>
+        <lastmod>2024-12-16T07:17:50.635Z</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
+
