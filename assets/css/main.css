@@ -54,8 +54,10 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: #f4f2ee url(../img/bfn-yazilim-background.webp) no-repeat top
-    center;
+  //background: #f4f2ee url(../img/bfn-yazilim-background.webp) no-repeat top
+  //  center;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);  
+  background-attachment: fixed;
   transition: all 1s ease-out;
   scroll-behavior: smooth;
   overscroll-behavior-y: contain;
