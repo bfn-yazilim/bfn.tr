@@ -1,39 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BFN</title>
-
-    <link rel="stylesheet" href="assets/css/main.css?v=0.0.8">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css?v=0.0.7">
-    <meta content="/assets/img/soner-acar.webp" itemprop="image">
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1296049589985967"
-     crossorigin="anonymous"></script> -->
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BF6Y6J8VK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0BF6Y6J8VK');
-</script>
+    <?php include('_head.php') ?>
 </head>
 <body>
-  <header class="header">
-    <div class="topbar">
-   <div class="top-menu">
-    <a href="/" title="Anasayfa">Anasayfa</a>
-    <a href="/about" title="Hakkında">Hakkında</a>
-   </div>
-   <div class="contact">
-    <a href="tel:+905340543044"><i class="fa fa-phone"></i> +90 (534) 054 3044</a>
-    <a href="mailto:info@bfn.tr"><i class="fa fa-envelope"></i> info@bfn.tr</a> 
-   </div>
-    </div>
-  </header>
+  <?php include('_header.php') ?>
     <main>
         <img class="character" src="assets/img/soner-acar.webp" width="150px" height="305px" alt="Soner Acar" />
         <h1>BFN Siteleri</h1>
@@ -56,8 +28,7 @@
             <a class="link" href="#" title="haber.bfn.tr"><img src="assets/img/links/planning.svg?v=1" alt="haber page" width="140px" height="140px"><p>haber.bfn.tr</p></a>            
       </div>
     </main>
-    <footer>
-        <span><a href="https://soneracar.bfn.tr" target="_blank" title="Soner Acar'ın Kişisel İnternet Sitesi">Soner Acar</a> ©Copyright 2025</span>  <a href="/about" title="bfn.tr Nedir">bfn.tr Nedir</a>
-    </footer>
+
+    <?php include('_footer.php') ?>
 </body>
 </html>
