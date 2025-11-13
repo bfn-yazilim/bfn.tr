@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private directories if any
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all assets
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://bfn.tr/sitemap.xml
+
+# Crawl-delay (optional, removes if not needed)
+Crawl-delay: 1
