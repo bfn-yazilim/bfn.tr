@@ -1,13 +1,21 @@
-<header class="header">
-    <div class="topbar">
-   <div class="top-menu">
-    <a href="/" title="Anasayfa">Anasayfa</a>
-    <a href="/about" title="Hakkında">Hakkında</a>
-    <a href="/contact" title="İletişim">İletişim</a>
-   </div>
-   <div class="contact">
-    <a href="tel:+905340543044"><i class="fa fa-phone"></i> +90 (534) 054 3044</a>
-    <a href="mailto:info@bfn.tr"><i class="fa fa-envelope"></i> info@bfn.tr</a> 
-   </div>
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="/" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">BFN</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Anasayfa</a></li>
+          <li><a href="/about">Hakkında</a></li>
+          <li><a href="/contact">İletişim</a></li>
+          <li><a href="/privacy-policy">Gizlilik Politikası</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="tel:+905340543044">İletişim</a>
+
     </div>
   </header>

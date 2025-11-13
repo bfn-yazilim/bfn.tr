@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <title>Gizlilik Politikası - BFN</title>
+    <?php 
+    $pageTitle = "Gizlilik Politikası - BFN";
+    $pageDescription = "BFN gizlilik politikası. Çerez kullanımı, Google AdSense ve Analytics politikalarımız hakkında bilgi edinin.";
+    ?>
+    <title><?php echo $pageTitle; ?></title>
     <?php include('_head.php') ?>
 </head>
-<body>
+<body class="index-page">
   <?php include('_header.php') ?>
-  <main class="page">
+  
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/">Anasayfa</a></li>
+            <li class="current">Gizlilik Politikası</li>
+          </ol>
+        </nav>
         <h1>Gizlilik Politikası</h1>
-        <div style="text-align: left; max-width: 800px; margin: 0 auto;">
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Privacy Policy Section -->
+    <section class="privacy-policy section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
             
             <h2>1. Genel Bilgiler</h2>
             <p>bfn.tr ("biz", "bize" veya "bizim") olarak ziyaretçilerimizin gizliliğine önem veriyoruz. Bu Gizlilik Politikası, web sitemizi ziyaret ettiğinizde toplanan bilgilerin nasıl kullanıldığını açıklamaktadır.</p>
@@ -61,9 +83,14 @@
             </ul>
             
             <p><strong>Son Güncelleme: 14 Kasım 2025</strong></p>
-        </div>
-    </main>
 
-    <?php include('_footer.php') ?>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Privacy Policy Section -->
+
+  </main>
+
+  <?php include('_footer.php') ?>
 </body>
 </html>

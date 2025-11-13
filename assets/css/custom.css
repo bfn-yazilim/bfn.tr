@@ -1,0 +1,24 @@
+/* Custom CSS for BFN Site */
+
+/* Fix for fixed-top header - add padding to body to prevent content going under header */
+body {
+  padding-top: 80px; /* Header height */
+}
+
+/* Additional spacing for page titles */
+.page-title {
+  padding-top: 20px;
+}
+
+/* Ensure main content doesn't overlap with header */
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+}

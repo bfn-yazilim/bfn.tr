@@ -1,0 +1,26 @@
+{
+  "name": "BFN - Oyunlar ve Uygulamalar",
+  "short_name": "BFN",
+  "description": "Oyunlar, uygulamalar, eğitici notlar ve web geliştirme projeleri",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#388da8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/v2/assets/img/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/v2/assets/img/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "tr-TR",
+  "dir": "ltr",
+  "categories": ["games", "education", "developer tools"],
+  "scope": "/"
+}

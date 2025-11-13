@@ -1,35 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
     xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    
+    <!-- Ana Sayfa -->
     <url>
         <loc>https://bfn.tr/</loc>
-        <lastmod>2024-12-16T08:37:39+00:00</lastmod>
-        <changefreq>always</changefreq>
+        <lastmod>2025-11-14T12:00:00+03:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    
     <url>
-        <loc>https://linkedin-queens.bfn.tr/</loc>
-        <lastmod>2024-12-16T07:17:50.635Z</lastmod>
-        <changefreq>always</changefreq>
+        <loc>https://bfn.tr/index.php</loc>
+        <lastmod>2025-11-14T12:00:00+03:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    
+    <!-- Hakkında Sayfası -->
     <url>
-        <loc>https://soneracar.bfn.tr/</loc>
-        <lastmod>2024-12-16T07:17:50.635Z</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1.0</priority>
+        <loc>https://bfn.tr/about.php</loc>
+        <lastmod>2025-11-14T12:00:00+03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
+    
+    <!-- İletişim Sayfası -->
+    <url>
+        <loc>https://bfn.tr/contact.php</loc>
+        <lastmod>2025-11-14T12:00:00+03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Gizlilik Politikası -->
+    <url>
+        <loc>https://bfn.tr/privacy-policy.php</loc>
+        <lastmod>2025-11-14T12:00:00+03:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Alt Domain Projeleri -->
+    <url>
+        <loc>https://queens.bfn.tr/</loc>
+        <lastmod>2025-11-14T12:00:00+03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
     <url>
         <loc>https://skyscrapers.bfn.tr/</loc>
-        <lastmod>2024-12-16T07:17:50.635Z</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1.0</priority>
+        <lastmod>2025-11-14T12:00:00+03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
+    
+    <url>
+        <loc>https://soneracar.bfn.tr/</loc>
+        <lastmod>2025-11-14T12:00:00+03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://layout.bfn.tr/</loc>
+        <lastmod>2025-11-14T12:00:00+03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
     <url>
         <loc>https://weekly-calendar.bfn.tr/</loc>
-        <lastmod>2024-12-16T07:17:50.635Z</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1.0</priority>
+        <lastmod>2025-11-14T12:00:00+03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
+    
 </urlset>
 
