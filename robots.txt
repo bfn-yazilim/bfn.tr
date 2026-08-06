@@ -10,6 +10,3 @@ Allow: /assets/
 
 # Sitemap location
 Sitemap: https://bfn.tr/sitemap.xml
-
-# Crawl-delay (optional, removes if not needed)
-Crawl-delay: 1

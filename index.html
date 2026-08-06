@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bfn.tr | Subdomain Dizini</title>
+  <meta name="description" content="bfn.tr altındaki projelerin sade ve hızlı dizini. Subdomainleri kategorilere göre keşfedin.">
+  <link rel="canonical" href="https://bfn.tr/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="bfn.tr | Subdomain Dizini">
+  <meta property="og:description" content="bfn.tr altındaki projelerin sade ve hızlı dizini.">
+  <meta property="og:url" content="https://bfn.tr/">
+  <meta property="og:site_name" content="bfn.tr">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1e2a35">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-row">
+      <a class="logo" href="/">bfn<span>.tr</span></a>
+      <nav class="menu" aria-label="Ana menü">
+        <a href="/hakkinda/">Hakkında</a>
+        <a href="/reklam/">Reklam</a>
+        <a href="/iletisim/">İletişim</a>
+        <a href="/site-haritasi/">Site haritası</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>bfn.tr altındaki projelerin dizini</h1>
+          <p class="lead">Her proje ayrı subdomainde çalışır. Aşağıdan arayıp filtreleyerek doğrudan ilgili servise gidebilirsiniz.</p>
+          <div class="stats">
+            <div class="stat"><b id="liveCount">0</b><span>aktif subdomain</span></div>
+            <div class="stat"><b id="catCount">0</b><span>kategori</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img class="hero-icon" src="/assets/img/bfn-icon.svg" alt="" loading="eager" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Subdomain listesi">
+      <div class="controls">
+        <input id="search" type="search" placeholder="Subdomain veya açıklama ara">
+        <select id="cat">
+          <option value="all">Tüm kategoriler</option>
+          <option value="content">İçerik</option>
+          <option value="personal">Kişisel</option>
+          <option value="finance">Finans</option>
+          <option value="health">Sağlık</option>
+          <option value="tools">Araçlar</option>
+        </select>
+      </div>
+      <div class="cards" id="cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 bfn.tr • <a href="/">Ana sayfa</a> • <a href="/gizlilik/">Gizlilik</a> • <a href="/sartlar/">Şartlar</a> • <a href="/cerez/">Çerezler</a> • <a href="/yayin-ilkeleri/">Yayın İlkeleri</a> • <a href="/yasal-uyari/">Yasal Uyarı</a></div>
+  </footer>
+
+  <script>
+    const SITES = [
+      { sub: "blog", cat: "content", status: "live", desc: "Yazılar, notlar ve proje günlükleri.", shot: "/assets/img/links/blog.webp" },
+      { sub: "soneracar", cat: "personal", status: "live", desc: "Kişisel sayfa: özgeçmiş, iletişim ve çalışmalar.", shot: "/assets/img/links/soneracar.webp" },
+      { sub: "altin", cat: "finance", status: "live", desc: "Altın kurlarını tek ekranda gösteren takip aracı.", shot: "/assets/img/links/altin.webp" },
+      { sub: "kilo", cat: "health", status: "live", desc: "Kilo değişimini kayıt ve grafikle izleme aracı.", shot: "/assets/img/links/kilo.webp" },
+      { sub: "clipboard", cat: "tools", status: "planned", desc: "Tarayıcı içinde hızlı metin kopyalama aracı. Şu an planlama aşamasında.", shot: "/assets/img/links/clipboard.webp" }
+    ];
+
+    const labels = {
+      content: "İçerik",
+      personal: "Kişisel",
+      finance: "Finans",
+      health: "Sağlık",
+      tools: "Araçlar"
+    };
+
+    const cardsEl = document.getElementById("cards");
+    const searchEl = document.getElementById("search");
+    const catEl = document.getElementById("cat");
+
+    function render() {
+      const q = searchEl.value.trim().toLowerCase();
+      const cat = catEl.value;
+      const filtered = SITES.filter((s) => {
+        const matchText = (s.sub + " " + s.desc + " " + labels[s.cat]).toLowerCase().includes(q);
+        const matchCat = cat === "all" || s.cat === cat;
+        return matchText && matchCat;
+      });
+
+      cardsEl.innerHTML = filtered.map((s) => {
+        const shotHtml = s.status === "planned"
+          ? '<div class="shot-wrap shot-placeholder"><span>Yapım aşamasında</span></div>'
+          : '<div class="shot-wrap"><img class="shot" src="' + s.shot + '" alt="' + s.sub + '.bfn.tr ekran görüntüsü" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'/assets/img/bfn-yazilim-background.webp\';"></div>';
+
+        return '<a class="card' + (s.status === "planned" ? ' card-planned' : '') + '" href="' + (s.status === "planned" ? '#' : ('https://' + s.sub + '.bfn.tr')) + '"' + (s.status === "planned" ? ' aria-disabled="true"' : ' target="_blank" rel="noopener"') + '>' +
+          shotHtml +
+          '<span class="chip">' + labels[s.cat] + '</span>' +
+          '<h2 class="host">' + s.sub + '.bfn.tr</h2>' +
+          '<p class="desc">' + s.desc + '</p>' +
+        '</a>';
+      }).join("");
+    }
+
+    document.getElementById("liveCount").textContent = String(SITES.filter((s) => s.status === "live").length);
+    document.getElementById("catCount").textContent = String(Object.keys(labels).length);
+
+    searchEl.addEventListener("input", render);
+    catEl.addEventListener("change", render);
+    render();
+  </script>
+</body>
+</html>
