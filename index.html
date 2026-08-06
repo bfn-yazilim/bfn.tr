@@ -58,6 +58,7 @@
           <option value="personal">Kişisel</option>
           <option value="finance">Finans</option>
           <option value="health">Sağlık</option>
+          <option value="games">Oyun</option>
           <option value="tools">Araçlar</option>
         </select>
       </div>
@@ -82,6 +83,7 @@
           <a href="https://soneracar.bfn.tr" target="_blank" rel="noopener">soneracar.bfn.tr</a>
           <a href="https://altin.bfn.tr" target="_blank" rel="noopener">altin.bfn.tr</a>
           <a href="https://kilo.bfn.tr" target="_blank" rel="noopener">kilo.bfn.tr</a>
+          <a href="https://bead-game.bfn.tr" target="_blank" rel="noopener">bead-game.bfn.tr</a>
           <a href="#" aria-disabled="true">clipboard.bfn.tr</a>
         </div>
       </div>
@@ -120,6 +122,7 @@
       { sub: "soneracar", cat: "personal", status: "live", desc: "Kişisel sayfa: özgeçmiş, iletişim ve çalışmalar.", shot: "/assets/img/links/soneracar.webp" },
       { sub: "altin", cat: "finance", status: "live", desc: "Altın kurlarını tek ekranda gösteren takip aracı.", shot: "/assets/img/links/altin.webp" },
       { sub: "kilo", cat: "health", status: "live", desc: "Kilo değişimini kayıt ve grafikle izleme aracı.", shot: "/assets/img/links/kilo.webp" },
+      { sub: "bead-game", cat: "games", status: "live", desc: "Boş hücreyi kullanarak renkli taşları kaydırın. Hedefiniz, her satırı tek renk olacak şekilde düzenleyerek bulmacayı çözmek.", shot: "/assets/img/links/bead-game.webp" },
       { sub: "clipboard", cat: "tools", status: "planned", desc: "Tarayıcı içinde hızlı metin kopyalama aracı. Şu an planlama aşamasında.", shot: "/assets/img/links/clipboard.webp" }
     ];
 
@@ -128,6 +131,7 @@
       personal: "Kişisel",
       finance: "Finans",
       health: "Sağlık",
+      games: "Oyun",
       tools: "Araçlar"
     };
 
@@ -147,7 +151,7 @@
       cardsEl.innerHTML = filtered.map((s) => {
         const shotHtml = s.status === "planned"
           ? '<div class="shot-wrap shot-placeholder"><span>Yapım aşamasında</span></div>'
-          : '<div class="shot-wrap"><img class="shot" src="' + s.shot + '" alt="' + s.sub + '.bfn.tr ekran görüntüsü" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'/assets/img/bfn-yazilim-background.webp\';"></div>';
+          : '<div class="shot-wrap"><img class="shot" src="' + s.shot + '" alt="' + s.sub + '.bfn.tr ekran görüntüsü" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="if(this.dataset.fallback!==\'1\'){this.dataset.fallback=\'1\';this.src=this.src.replace(/\\.webp(?=$|[?#])/i,\'.jpg\');}else{this.onerror=null;this.src=\'/assets/img/bfn-logo.jpg\';}"></div>';
 
         return '<a class="card' + (s.status === "planned" ? ' card-planned' : '') + '" href="' + (s.status === "planned" ? '#' : ('https://' + s.sub + '.bfn.tr')) + '"' + (s.status === "planned" ? ' aria-disabled="true"' : ' target="_blank" rel="noopener"') + '>' +
           shotHtml +
