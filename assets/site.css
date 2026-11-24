@@ -470,3 +470,5 @@ a:hover {
 .street b { display:grid; place-items:center; width:3rem; height:3rem; background:var(--surface); border:1px solid var(--line); border-radius:6px }
 .guide details { padding:.8rem; background:var(--surface); border-bottom:1px solid var(--line) }
 .guide summary { cursor:pointer; font-weight:600 }
+
+.card[hidden] { display: none; }
