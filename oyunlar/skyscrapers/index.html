@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skyscrapers’ta kenar ipuçlarını okuma rehberi | bfn.tr</title>
+  <meta name="description" content="Dört binalı bir sokakta hangi yüksekliklerin gizlendiğini bulun. Ardından aynı yöntemi bulmacada deneyin.">
+  <link rel="canonical" href="https://bfn.tr/oyunlar/skyscrapers/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1296049589985967" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-row">
+      <a class="logo" href="/">bfn<span>.tr</span></a>
+      <nav class="menu" aria-label="Ana menü">
+        <a href="/hakkinda/">Hakkında</a>
+        <a href="/reklam/">Reklam</a>
+        <a href="/iletisim/">İletişim</a>
+        <a href="/site-haritasi/">Site haritası</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap guide"><article>
+<a href="/#rehberler">← Oyun rehberleri</a><h1>Gökdelenleri iki yönden okuyun</h1>
+<p>Skyscrapers’ta her hücre bir bina, içindeki sayı da binanın yüksekliğidir. Dört hücreli her satıra ve sütuna 1, 2, 3 ve 4 birer kez yazılır. Kenardaki sayı, o uçta duran birinin kaç bina göreceğini söyler.</p>
+<h2>Önce tek bir sokağa bakın</h2>
+<div class="street" aria-label="Soldan sağa bina yükseklikleri"><b>2</b><b>1</b><b>4</b><b>3</b></div>
+<p>Soldan yürüdüğünüzü düşünün. İlk bina olan 2’yi görürsünüz. Arkasındaki 1 onun gölgesinde kalır. 4 daha yüksek olduğu için görünür, sonundaki 3 ise onun arkasında kalır. Sol ipucu <strong>2</strong> olur. Sağdan bakınca önce 3’ü, ardından 4’ü görürsünüz. Bu sokağın sağ ipucu da <strong>2</strong> olur.</p>
+<h2>İki uçtan bir satırı tamamlayın</h2>
+<p>Yeni bir satırda soldaki ipucu <strong>3</strong>, sağdaki ipucu <strong>1</strong> olsun. İkinci hücrede zaten 3 var. Boş hücrelere hangi sayılar gelmeli?</p>
+<div class="street" aria-label="Boş, üç, boş, boş"><b>?</b><b>3</b><b>?</b><b>?</b></div>
+<details><summary>İlk adımı göster</summary><p>Sağdan yalnızca bir bina görünüyor. En sağdaki hücreye 4 gelmeli. Oraya daha kısa bir bina yazsaydınız, arkasındaki 4 de görünürdü.</p></details>
+<details><summary>Çözümü ve nedenini gör</summary><p>İki olasılık var: <strong>1 · 3 · 2 · 4</strong> ve <strong>2 · 3 · 1 · 4</strong>. İkisinde de soldan üç bina görünüyor. Bu ipuçları tek başına ilk hücreyi belirlemeye yetmez. Örneğin ilk sütunun başka bir hücresinde 1 varsa ilk hücreye 2 gelir ve satır <strong>2 · 3 · 1 · 4</strong> olur.</p></details>
+<h2>Tahtaya geçince nereden başlamalı?</h2>
+<p>Önce kenarında 1 veya 4 yazan satır ve sütunları bulun. 1, o kenara bitişik hücreye 4 koydurur. 4 ise o yönden başlayarak sırayı bütünüyle belirler: 1, 2, 3, 4. Her yerleştirmeden sonra kesişen sütuna veya satıra bakın. Yukarıdaki örnekte eksik kalan bilgi çoğu zaman tam oradadır.</p>
+<p><a class="guide-play" href="https://skyscrapers.bfn.tr/">Oyunu aç →</a></p>
+</article></main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/">
+          <img src="/assets/img/bfn-icon.svg" alt="bfn.tr logosu">
+          <span>bfn.tr</span>
+        </a>
+        <p>bfn.tr, tek kişilik projelerin toplandığı bir kök alan adı ve subdomain dizini.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Dizin</h3>
+        <div class="footer-links">
+          <a href="https://blog.bfn.tr" target="_blank" rel="noopener">blog.bfn.tr</a>
+          <a href="https://soneracar.bfn.tr" target="_blank" rel="noopener">soneracar.bfn.tr</a>
+          <a href="https://altin.bfn.tr" target="_blank" rel="noopener">altin.bfn.tr</a>
+          <a href="https://kilo.bfn.tr" target="_blank" rel="noopener">kilo.bfn.tr</a>
+          <a href="https://bead-game.bfn.tr" target="_blank" rel="noopener">bead-game.bfn.tr</a>
+          <a href="https://skyscrapers.bfn.tr" target="_blank" rel="noopener">skyscrapers.bfn.tr</a>
+          <a href="https://ageof.bfn.tr" target="_blank" rel="noopener">ageof.bfn.tr</a>
+          <a href="https://army.bfn.tr" target="_blank" rel="noopener">army.bfn.tr</a>
+          <a href="https://atesin-lunaparki.bfn.tr" target="_blank" rel="noopener">atesin-lunaparki.bfn.tr</a>
+          <a href="https://investation-2026.bfn.tr" target="_blank" rel="noopener">investation-2026.bfn.tr</a>
+          <a href="https://investation-2027.bfn.tr" target="_blank" rel="noopener">investation-2027.bfn.tr</a>
+          <a href="https://minik-kesifler.bfn.tr" target="_blank" rel="noopener">minik-kesifler.bfn.tr</a>
+          <a href="https://weekly-calendar.bfn.tr" target="_blank" rel="noopener">weekly-calendar.bfn.tr</a>
+          <a href="https://x-account-reset.bfn.tr" target="_blank" rel="noopener">x-account-reset.bfn.tr</a>
+          <a href="https://yanki.bfn.tr" target="_blank" rel="noopener">yanki.bfn.tr</a>
+          <a href="https://zombi.bfn.tr" target="_blank" rel="noopener">zombi.bfn.tr</a>
+          <a href="#" aria-disabled="true">clipboard.bfn.tr</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Kurumsal</h3>
+        <div class="footer-links">
+          <a href="/">Ana sayfa</a>
+          <a href="/hakkinda/">Hakkında</a>
+          <a href="/reklam/">Reklam Verin</a>
+          <a href="/iletisim/">İletişim</a>
+          <a href="/site-haritasi/">Site haritası</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Yasal</h3>
+        <div class="footer-links">
+          <a href="/gizlilik/">Gizlilik Politikası</a>
+          <a href="/sartlar/">Kullanım Şartları</a>
+          <a href="/cerez/">Çerez Politikası</a>
+          <a href="/yasal-uyari/">Yasal Uyarı</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap footer-bottom">
+      <span>© 2026 bfn.tr - Tüm hakları saklıdır.</span>
+      <span>Türkiye</span>
+    </div>
+  </footer>
+</body>
+</html>

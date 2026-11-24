@@ -1,4 +1,9 @@
-.git/
-.wrangler/
+.git/**
+.wrangler/**
+.vscode/**
+functions/**
 _worker.js
-functions/
+wrangler.jsonc
+AGENTS.md
+README.md
+.editorconfig
